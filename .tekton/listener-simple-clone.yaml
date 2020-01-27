@@ -14,10 +14,10 @@ spec:
     - name: apikey
       description: the ibmcloud api key
     - name: toolchainRegion
-      description: the ibmcloud region containing the toolchain referencing the repository
+      description: the ibmcloud region containing the toolchain
       default: us-south
     - name: toolchainId
-      description: The IBM Cloud Kubernetes cluster region
+      description: The id of the toolchain referencing the git repository to clone
   resourcetemplates:
     # CD context defined as a configmap because it is immutable information
     - apiVersion: v1
