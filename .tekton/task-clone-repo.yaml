@@ -16,7 +16,7 @@ spec:
         description: |
           the git revision/commit to update the git HEAD to.
           Default is to mean only use the branch
-        default: ""
+        default: " "
       - name: directoryName
         description: |
           name of the new directory to clone into.
