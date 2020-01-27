@@ -24,6 +24,7 @@ spec:
       description: |
         content of .dockerconfigjson for a secret of type kubernetes.io/dockerconfigjson.	
         This can be created using "kubectl create secret --dry-run=true -o yaml docker-registry tekton-adoption --docker-server=${REGISTRY_URL} --docker-password=${TOKEN} --docker-username=iamapikey --docker-email=a@b.com"  resourcetemplates:
+  resourcetemplates:
     # CD context defined as a configmap because it is immutable information
     - apiVersion: v1
       kind: ConfigMap
